@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
+    "target": "ESNext",
     "strictNullChecks": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
