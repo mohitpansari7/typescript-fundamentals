@@ -1,5 +1,6 @@
 {
   "name": "address-book",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
   "directories": {
@@ -12,7 +13,11 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc src/index.ts --outDir lib --types node --module commonjs --target ES2017",
-    "test": "mocha"
+    "test": "mocha test/**/*.ts"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "@types/node": "^14.14.41",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
 }
